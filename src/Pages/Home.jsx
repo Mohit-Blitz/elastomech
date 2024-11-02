@@ -1,9 +1,15 @@
-import React from 'react'
+import NavBar from "../Components/Home/NavBar";
+import InfoTopBar from "../Components/Home/InfoTopBar";
 
 const Home = () => {
-    return (
-        <div className='text-black'><h1>Playfair Display</h1></div>
-    )
-}
+  return (
+    <>
+      <div className="h-full">
+        <InfoTopBar />
+        <NavBar />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
