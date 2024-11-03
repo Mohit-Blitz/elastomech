@@ -1,8 +1,12 @@
 import React from 'react'
+import FullPageSlider from '../Components/FullPageSlider'
+
 
 const Home = () => {
     return (
-        <div className='text-black'><h1>Playfair Display</h1></div>
+        <div className='flex flex-col'>
+            <FullPageSlider />
+        </div>
     )
 }
 
