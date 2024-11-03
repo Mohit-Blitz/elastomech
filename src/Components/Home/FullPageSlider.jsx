@@ -11,20 +11,22 @@ const FullPageSlider = () => {
       image: 'https://konstruk.rstheme.com/assets/h1-2-Dx1IwfDf.jpg',
       label: 'CONSTRUCTION BUSINESS',
       title: 'We build something new and consistent.',
-      description: 'No matter where or what you want to build, we mobilize the right experts to drive value and realize your project consistent goals.'
+      description: 'No matter where or what you want to build, we mobilize the right experts to drive value and realize your project consistent goals.',
+      alignRight: true, // Align content to the right
     },
     {
       image: 'https://konstruk.rstheme.com/assets/h1-1-CNAuOS_Z.jpg',
       label: 'CONSTRUCTION BUSINESS',
       title: 'Building Dreams Into Reality.',
-      description: 'We bring together expertise and innovation to deliver exceptional construction solutions for our clients.'
-    }
+      description: 'We bring together expertise and innovation to deliver exceptional construction solutions for our clients.',
+      alignRight: false, // Align content to the left
+    },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 800000); // Set interval to 8 seconds
     return () => clearInterval(timer);
   }, []);
 
@@ -47,26 +49,24 @@ const FullPageSlider = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
+          />
 
           {/* Content */}
-          <div className="relative h-full flex items-center">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="max-w-3xl space-y-6">
-                <div className="inline-block bg-yellow-500/90 px-4 py-1 text-sm font-medium">
+          <div className={`relative h-full flex items-center ${slide.alignRight ? 'justify-end' : 'justify-start'}`}>
+            <div className={`container mx-auto px-4 md:px-6 w-full flex  ${slide.alignRight ? 'justify-end' : 'justify-start'}`}>
+              <div className={`max-w-3xl space-y-6 ${slide.alignRight ? ' text-left' : ''}`}>
+                <div className="inline-block bg-yellow-500 px-4 py-1 text-sm font-medium">
                   {slide.label}
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+                <h1 className="text-[65px]  md:text-6xl font-[700] text-[#010d14] leading-[75px] ">
                   {slide.title}
                 </h1>
-                <p className="text-lg md:text-xl text-white/90 max-w-2xl">
+                <p className=" md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
                   {slide.description}
                 </p>
                 <Button
                   variant="contained"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-6 h-auto text-lg"
+                  className="!bg-[#ffb703] hover:bg-[#ffb703] !text-[#010d14] !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px]"
                 >
                   DISCOVER MORE
                 </Button>
@@ -79,17 +79,17 @@ const FullPageSlider = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors  w-[60px] h-[60px]"
         aria-label="Previous slide"
       >
-        <ChevronLeftRoundedIcon className="h-6 w-6" />
+        <ChevronLeftRoundedIcon className="!text-[28px]" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors w-[60px] h-[60px]"
         aria-label="Next slide"
       >
-        <ChevronRightRoundedIcon className="h-6 w-6" />
+        <ChevronRightRoundedIcon className="!text-[28px]" />
       </button>
 
       {/* Slide Indicators */}
@@ -105,6 +105,6 @@ const FullPageSlider = () => {
       </div>
     </div>
   );
-}
+};
 
 export default FullPageSlider;
