@@ -1,23 +1,57 @@
-import Button from "@mui/material/Button";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import clientLogo from "../../Assets/images/logo.png";
-
 const NavBar = () => {
   return (
-    <>
-      <div className="flex h-[12%] mx-[15%] items-center justify-between">
-        <div className="h-full flex ">
-          <img src={clientLogo} alt="logo" className="h-[90%]" />
+    <header className="menu-area sticky top-0 bg-white shadow z-[999]">
+      <div className="container mx-auto flex justify-between items-center py-6">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <Link to="/index" className="logo-area">
+            <img
+              className="normal-logo h-10"
+              src={clientLogo}
+              alt="logo"
+            />
+          </Link>
         </div>
-        <ul className="flex items-center gap-3">
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>
-            <Button variant="contained">Find Distrubutor</Button>
-          </li>
-        </ul>
+
+        {/* Navigation Menu */}
+        <nav className="flex-1 hidden md:flex justify-center space-x-6 text-gray-800 font-medium">
+          <Link
+            to="/index"
+            className="text-yellow-500 font-semibold hover:text-yellow-600"
+          >
+            Home
+          </Link>
+          <Link to="/about" className="hover:text-gray-600">About</Link>
+          <Link to="/services" className="hover:text-gray-600">Services</Link>
+          <Link to="/pages" className="hover:text-gray-600">Pages </Link>
+          <Link to="/contact" className="hover:text-gray-600">Contact</Link>
+        </nav>
+
+        {/* Right Section */}
+        <div className="flex items-center space-x-4">
+          {/* Button */}
+          <Link
+            to="/contact"
+            className="!bg-[#ffb703]  text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff]"
+          >
+            Let's Talk
+          </Link>
+
+
+          {/* Hamburger Icon */}
+          <button id="nav-expander" className="md:hidden flex items-center justify-center">
+            <div className="grid grid-cols-3 gap-1 w-5 h-5">
+              {[...Array(9)].map((_, index) => (
+                <span key={index} className="w-1.5 h-1.5 bg-black rounded-full"></span>
+              ))}
+            </div>
+          </button>
+        </div>
       </div>
-    </>
+    </header>
   );
 };
 

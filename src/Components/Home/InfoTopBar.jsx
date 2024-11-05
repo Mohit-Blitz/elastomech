@@ -6,7 +6,7 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 const InfoTopBar = () => {
   return (
     <>
-      <div className="w-full text-white text-sm font-normal h-[6%] bg-[#010d14] flex items-center">
+      <div className="w-full text-white text-sm font-normal p-3 bg-[#010d14] flex items-center">
         <div className="flex w-full items-center justify-between mx-[15%]">
           <ul className="flex gap-3 ">
             <li className="flex gap-2 items-center">
