@@ -1,3 +1,10 @@
 .font-playfair {
   font-family: Playfair Display;
 }
+
+.bg1 {
+  background: url("https://konstruk.rstheme.com/assets/about-bg-CuSu5v4z.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
