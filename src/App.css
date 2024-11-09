@@ -24,3 +24,17 @@
   padding-left: 5px;
   color: #ffd930;
 }
+
+.prefix {
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #ffda31;
+  font-family: "Roboto", Sans-serif;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+}

@@ -37,9 +37,9 @@ const CounterSection = () => {
                 clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
               }}
             >      <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                341<span className="text-lg font-normal">+</span>
+                341<span className="prefix">+</span>
               </div>
-              <span className="text-lg">Completed Projects</span>
+              <span className="title">Completed Projects</span>
             </div>
 
             <div className="bg-[#ffda31] bg-opacity-20  rounded-md text-center text-white"
@@ -48,9 +48,9 @@ const CounterSection = () => {
                 clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
               }}>
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                302<span className="text-lg font-normal">+</span>
+                302<span className="prefix">+</span>
               </div>
-              <span className="text-lg">Happy Clients</span>
+              <span className="title">Happy Clients</span>
             </div>
 
             <div className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
@@ -60,9 +60,9 @@ const CounterSection = () => {
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                153<span className="text-lg font-normal">+</span>
+                153<span className="prefix">+</span>
               </div>
-              <span className="text-lg">Qualified Engineers</span>
+              <span className="title">Qualified Engineers</span>
             </div>
 
             <div className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
@@ -72,9 +72,9 @@ const CounterSection = () => {
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                32<span className="text-lg font-normal">+</span>
+                32<span className="prefix">+</span>
               </div>
-              <span className="text-lg">Years Experience</span>
+              <span className="title">Years Experience</span>
             </div>
           </div>
         </div>
