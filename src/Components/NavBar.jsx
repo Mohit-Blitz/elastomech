@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import clientLogo from "../Assets/images/logo.png";
 const NavBar = () => {
   return (
-    <header className="menu-area sticky top-0 bg-white shadow z-[999]">
-      <div className="container mx-auto flex justify-between items-center py-6">
+    <header className="menu-area sticky top-[-1px] bg-white shadow z-[999]">
+      <div className="container mx-auto flex justify-between items-center py-6 max-[780px]:px-[20px]">
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/index" className="logo-area">
@@ -39,7 +39,7 @@ const NavBar = () => {
           {/* Button */}
           <Link
             to="/contact"
-            className="!bg-[#ffda31]  text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff]"
+            className="!bg-[#ffda31]  text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff] max-[780px]:hidden"
           >
             Let's Talk
           </Link>
@@ -49,7 +49,7 @@ const NavBar = () => {
             id="nav-expander"
             className="md:hidden flex items-center justify-center"
           >
-            <div className="grid grid-cols-3 gap-1 w-5 h-5">
+            <div className="grid grid-cols-3 gap-[5px] w-5 h-5">
               {[...Array(9)].map((_, index) => (
                 <span
                   key={index}
