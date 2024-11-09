@@ -73,7 +73,7 @@ const ContactForm = () => {
                             {/* Submit Button */}
                             <Button
                                 variant="contained"
-                                className="!bg-[#ffda31] uppercase !text-[#010d14] !font-[600] px-6 py-2 md:px-[23px] md:py-[17px] !text-[14px] md:!text-[15px] !shadow-none hover:!bg-[#000] hover:!text-[#fff] !rounded-none"
+                                className="!bg-[#ffda31]  !text-black !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px] !shadow-none hover:!bg-black hover:!text-white !rounded-none"
                             >
                                 Submit Now
                             </Button>
