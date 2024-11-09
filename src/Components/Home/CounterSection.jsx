@@ -30,29 +30,48 @@ const CounterSection = () => {
                     {/* Right Section */}
                     <div className="lg:w-1/2 grid grid-cols-2 gap-6">
                         {/* Counter Item */}
-                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white">
-                            <div className="text-4xl font-bold mb-2">
+                        <div
+                            className="bg-yellow-600 bg-opacity-20 rounded-md text-center text-white"
+                            style={{
+                                padding: `28px 35px 40px`,
+                                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                            }}
+                        >      <div className="text-4xl font-bold mb-2 text-yellow-600">
                                 341<span className="text-lg font-normal">+</span>
                             </div>
                             <span className="text-lg">Completed Projects</span>
                         </div>
 
-                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white">
-                            <div className="text-4xl font-bold mb-2">
+                        <div className="bg-yellow-600 bg-opacity-20  rounded-md text-center text-white"
+                            style={{
+                                padding: `28px 35px 40px`,
+                                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                            }}>
+                            <div className="text-4xl font-bold mb-2 text-yellow-600">
                                 302<span className="text-lg font-normal">+</span>
                             </div>
                             <span className="text-lg">Happy Clients</span>
                         </div>
 
-                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white">
-                            <div className="text-4xl font-bold mb-2">
+                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white"
+                            style={{
+                                padding: `28px 35px 40px`,
+                                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                            }}
+                        >
+                            <div className="text-4xl font-bold mb-2 text-yellow-600">
                                 153<span className="text-lg font-normal">+</span>
                             </div>
                             <span className="text-lg">Qualified Engineers</span>
                         </div>
 
-                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white">
-                            <div className="text-4xl font-bold mb-2">
+                        <div className="bg-yellow-600 bg-opacity-20 p-6 rounded-md text-center text-white"
+                            style={{
+                                padding: `28px 35px 40px`,
+                                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                            }}
+                        >
+                            <div className="text-4xl font-bold mb-2 text-yellow-600">
                                 32<span className="text-lg font-normal">+</span>
                             </div>
                             <span className="text-lg">Years Experience</span>
@@ -60,7 +79,7 @@ const CounterSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
