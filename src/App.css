@@ -14,3 +14,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.custom-hover-effect {
+  padding: 6px 0 4px;
+}
+
+.custom-hover-effect:hover {
+  padding-left: 5px;
+  color: #ffd930;
+}

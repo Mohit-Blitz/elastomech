@@ -1,24 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import Button from '@mui/material/Button';
+import { useState, useEffect } from "react";
+import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
+import Button from "@mui/material/Button";
 
 const FullPageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: 'https://konstruk.rstheme.com/assets/h1-2-Dx1IwfDf.jpg',
-      label: 'CONSTRUCTION BUSINESS',
-      title: 'We build something new and consistent.',
-      description: 'No matter where or what you want to build, we mobilize the right experts to drive value and realize your project consistent goals.',
+      image: "https://konstruk.rstheme.com/assets/h1-2-Dx1IwfDf.jpg",
+      label: "CONSTRUCTION BUSINESS",
+      title: "We build something new and consistent.",
+      description:
+        "No matter where or what you want to build, we mobilize the right experts to drive value and realize your project consistent goals.",
       alignRight: true, // Align content to the right
     },
     {
-      image: 'https://konstruk.rstheme.com/assets/h1-1-CNAuOS_Z.jpg',
-      label: 'CONSTRUCTION BUSINESS',
-      title: 'Building Dreams Into Reality.',
-      description: 'We bring together expertise and innovation to deliver exceptional construction solutions for our clients.',
+      image: "https://konstruk.rstheme.com/assets/h1-1-CNAuOS_Z.jpg",
+      label: "CONSTRUCTION BUSINESS",
+      title: "Building Dreams Into Reality.",
+      description:
+        "We bring together expertise and innovation to deliver exceptional construction solutions for our clients.",
       alignRight: false, // Align content to the left
     },
   ];
@@ -43,7 +45,8 @@ const FullPageSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${currentSlide === index ? "opacity-100" : "opacity-0"
+            }`}
         >
           {/* Background Image */}
           <div
@@ -52,10 +55,19 @@ const FullPageSlider = () => {
           />
 
           {/* Content */}
-          <div className={`relative h-full flex items-center ${slide.alignRight ? 'justify-end' : 'justify-start'}`}>
-            <div className={`container mx-auto px-4 md:px-6 w-full flex  ${slide.alignRight ? 'justify-end' : 'justify-start'}`}>
-              <div className={`max-w-3xl space-y-6 ${slide.alignRight ? ' text-left' : ''}`}>
-                <div className="inline-block bg-yellow-500 px-4 py-1 text-sm font-medium">
+          <div
+            className={`relative h-full flex items-center ${slide.alignRight ? "justify-end" : "justify-start"
+              }`}
+          >
+            <div
+              className={`container mx-auto px-4 md:px-6 w-full flex  ${slide.alignRight ? "justify-end" : "justify-start"
+                }`}
+            >
+              <div
+                className={`max-w-3xl space-y-6 ${slide.alignRight ? " text-left" : ""
+                  }`}
+              >
+                <div className="inline-block bg-[#ffda31] px-4 py-1 text-sm font-medium">
                   {slide.label}
                 </div>
                 <h1 className="text-[65px]  md:text-6xl font-[700] text-[#010d14] leading-[75px] ">
@@ -66,7 +78,7 @@ const FullPageSlider = () => {
                 </p>
                 <Button
                   variant="contained"
-                  className="!bg-[#ffb703] hover:bg-[#ffb703] !text-[#010d14] !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px]"
+                  className="!bg-[#ffda31] hover:bg-[#ffda31] !text-[#010d14] !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px]"
                 >
                   DISCOVER MORE
                 </Button>
@@ -98,7 +110,8 @@ const FullPageSlider = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${currentSlide === index ? 'bg-yellow-500' : 'bg-white/50'}`}
+            className={`w-2 h-2 rounded-full transition-colors ${currentSlide === index ? "bg-[#ffda31]" : "bg-white/50"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
