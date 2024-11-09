@@ -14,7 +14,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.bg3 {
+  background: url('https://konstruk.rstheme.com/assets/contact-bg-D6w_m3TR.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .custom-hover-effect {
   padding: 6px 0 4px;
@@ -37,4 +42,10 @@
   font-weight: 500;
   line-height: 18px;
   color: #fff;
+}
+.contact-right-img {
+  background-image: url('https://konstruk.rstheme.com/assets/con-right-Bu3ROEF_.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
