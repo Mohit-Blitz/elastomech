@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import clientLogo from "../../Assets/images/logo.png";
+import React from "react";
+import { Link } from "react-router-dom";
+import clientLogo from "../Assets/images/logo.png";
 const NavBar = () => {
   return (
     <header className="menu-area sticky top-0 bg-white shadow z-[999]">
@@ -8,11 +8,7 @@ const NavBar = () => {
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/index" className="logo-area">
-            <img
-              className="normal-logo h-10"
-              src={clientLogo}
-              alt="logo"
-            />
+            <img className="normal-logo h-10" src={clientLogo} alt="logo" />
           </Link>
         </div>
 
@@ -24,10 +20,18 @@ const NavBar = () => {
           >
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-600">About</Link>
-          <Link to="/services" className="hover:text-gray-600">Services</Link>
-          <Link to="/pages" className="hover:text-gray-600">Pages </Link>
-          <Link to="/contact" className="hover:text-gray-600">Contact</Link>
+          <Link to="/about" className="hover:text-gray-600">
+            About
+          </Link>
+          <Link to="/services" className="hover:text-gray-600">
+            Services
+          </Link>
+          <Link to="/pages" className="hover:text-gray-600">
+            Pages{" "}
+          </Link>
+          <Link to="/contact" className="hover:text-gray-600">
+            Contact
+          </Link>
         </nav>
 
         {/* Right Section */}
@@ -40,12 +44,17 @@ const NavBar = () => {
             Let's Talk
           </Link>
 
-
           {/* Hamburger Icon */}
-          <button id="nav-expander" className="md:hidden flex items-center justify-center">
+          <button
+            id="nav-expander"
+            className="md:hidden flex items-center justify-center"
+          >
             <div className="grid grid-cols-3 gap-1 w-5 h-5">
               {[...Array(9)].map((_, index) => (
-                <span key={index} className="w-1.5 h-1.5 bg-black rounded-full"></span>
+                <span
+                  key={index}
+                  className="w-1.5 h-1.5 bg-black rounded-full"
+                ></span>
               ))}
             </div>
           </button>

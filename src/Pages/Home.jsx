@@ -1,25 +1,25 @@
-import NavBar from "../Components/Home/NavBar";
-import InfoTopBar from "../Components/Home/InfoTopBar";
-import FullPageSlider from '../Components/Home/FullPageSlider'
-import AboutSection from "../Components/Home/AboutSection";
-import CounterSection from "../Components/Home/CounterSection";
-
+import NavBar from "../Components/NavBar";
+import InfoTopBar from "../Components/InfoTopBar";
+import FullPageSlider from "../Components/FullPageSlider";
+import AboutSection from "../Components/AboutSection";
+import CounterSection from "../Components/CounterSection";
+import Footer from "../Components/Footer";
 
 const Home = () => {
-    return (
-        <>
-            <div className="flex flex-col min-h-screen">
-                <InfoTopBar />
-                <NavBar />
-                <div>
-                    <FullPageSlider />
-                    <AboutSection />
-                    <CounterSection />
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="flex flex-col min-h-screen">
+        <InfoTopBar />
+        <NavBar />
+        <div>
+          <FullPageSlider />
+          <AboutSection />
+          <CounterSection />
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
 };
-
 
 export default Home;
