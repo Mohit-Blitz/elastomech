@@ -1,17 +1,15 @@
-import React from "react";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
 const CounterSection = () => {
   return (
-    <div
-      className="bg-cover bg-center pt-20 pb-16 md:pt-16 md:pb-16 bg2"
-
-    >
+    <div className="bg-cover bg-center pt-20 pb-16 md:pt-16 md:pb-16 bg2">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center lg:justify-between">
           {/* Left Section */}
           <div className="text-left mb-10 lg:mb-0 lg:w-1/2">
-            <span className="text-[#ffda31] font-semibold text-lg">Number Talks</span>
+            <span className="text-[#ffda31] font-semibold text-lg">
+              Number Talks
+            </span>
             <h2 className="text-white text-4xl font-bold leading-tight mb-4">
               Konstruk will help you get <br /> things complete reality.
             </h2>
@@ -34,52 +32,58 @@ const CounterSection = () => {
               className="bg-[#ffda31] bg-opacity-20 rounded-md text-center text-white max-[600px]:w-[100%]"
               style={{
                 padding: `28px 35px 40px`,
-                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`,
               }}
-            >      <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                341<span className="prefix">+</span>
+            >
+              {" "}
+              <div className="text-4xl font-bold mb-2 text-[#ffda31]">
+                134<span className="prefix">+</span>
               </div>
               <span className="title">Completed Projects</span>
             </div>
 
-            <div className="bg-[#ffda31] bg-opacity-20  rounded-md text-center text-white"
+            <div
+              className="bg-[#ffda31] bg-opacity-20  rounded-md text-center text-white"
               style={{
                 padding: `28px 35px 40px`,
-                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
-              }}>
+                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`,
+              }}
+            >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                302<span className="prefix">+</span>
+                98<span className="prefix">+</span>
               </div>
               <span className="title">Happy Clients</span>
             </div>
 
-            <div className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
+            <div
+              className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
               style={{
                 padding: `28px 35px 40px`,
-                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`,
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                153<span className="prefix">+</span>
+                800<span className="prefix">+</span>
               </div>
-              <span className="title">Qualified Engineers</span>
+              <span className="title">Parts Developed</span>
             </div>
 
-            <div className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
+            <div
+              className="bg-[#ffda31] bg-opacity-20 p-6 rounded-md text-center text-white"
               style={{
                 padding: `28px 35px 40px`,
-                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`
+                clipPath: `polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%)`,
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                32<span className="prefix">+</span>
+                39<span className="prefix">+</span>
               </div>
               <span className="title">Years Experience</span>
             </div>
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

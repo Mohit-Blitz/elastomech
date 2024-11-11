@@ -29,7 +29,7 @@ const InfoTopBar = () => {
           </ul>
           <div className="flex gap-2 items-center">
             <AccessTimeIcon sx={{ color: "#ffd930" }} fontSize="small" />
-            <p> Hours: Sat-Thu: 9.00 am - 5.00 pm </p>
+            <p> Hours: Sat - Thu: 9.00 am - 5.00 pm </p>
           </div>
         </div>
       </div>

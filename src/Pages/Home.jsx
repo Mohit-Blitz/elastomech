@@ -1,9 +1,10 @@
 import NavBar from "../Components/NavBar";
-import InfoTopBar from "../Components/InfoTopBar";
-import FullPageSlider from "../Components/FullPageSlider";
-import AboutSection from "../Components/AboutSection";
-import CounterSection from "../Components/CounterSection";
 import Footer from "../Components/Footer";
+import Clients from "../Components/Clients";
+import InfoTopBar from "../Components/InfoTopBar";
+import AboutSection from "../Components/AboutSection";
+import FullPageSlider from "../Components/FullPageSlider";
+import CounterSection from "../Components/CounterSection";
 import ContactForm from "../Components/ContactForm";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
           <FullPageSlider />
           <AboutSection />
           <CounterSection />
+          <Clients />
           <ContactForm />
           <Footer />
         </div>
