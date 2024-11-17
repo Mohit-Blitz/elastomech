@@ -6,6 +6,7 @@ import AboutSection from "../Components/AboutSection";
 import FullPageSlider from "../Components/FullPageSlider";
 import CounterSection from "../Components/CounterSection";
 import ContactForm from "../Components/ContactForm";
+import ProjectsSection from "../Components/ProjectsSection";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <div>
           <FullPageSlider />
           <AboutSection />
+          <ProjectsSection />
           <CounterSection />
           <Clients />
           <ContactForm />
