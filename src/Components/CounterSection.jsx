@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 const CounterSection = () => {
   return (
     <div
-      className="bg-cover bg-center pt-20 pb-16 md:pt-16 md:pb-16 bg2"
+      className="bg-cover bg-center py-10 px-4 md:py-20 md:px-12 lg:py-[120px] lg:px-[10em] bg2"
 
     >
       <div className="container mx-auto px-4">
@@ -28,7 +28,7 @@ const CounterSection = () => {
           </div>
 
           {/* Right Section */}
-          <div className="lg:w-1/2 max-[600px]:grid-cols-1 grid grid-cols-2 gap-6 p-[6rem] max-[1000px]:p-0">
+          <div className="lg:w-1/2 max-[600px]:grid-cols-1 grid grid-cols-2 gap-6 p-[4rem] max-[1000px]:p-0">
             {/* Counter Item */}
             <div
               className="bg-[#ffda31] bg-opacity-20 rounded-md text-center text-white max-[600px]:w-[100%]"
