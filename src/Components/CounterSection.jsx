@@ -1,5 +1,3 @@
-import Button from "@mui/material/Button";
-
 const CounterSection = () => {
   return (
     <div className="bg-cover bg-center py-10 px-4 md:py-20 md:px-12 lg:py-[120px] lg:px-[10em] bg2">
@@ -11,18 +9,18 @@ const CounterSection = () => {
               Number Talks
             </span>
             <h2 className="text-white text-4xl font-bold leading-tight mb-4">
-              Konstruk will help you get <br /> things complete reality.
+              Elastomech will help you get <br /> things complete reality.
             </h2>
-            <p className="text-gray-300 text-lg mb-8">
+            {/* <p className="text-gray-300 text-lg mb-8">
               Konstruk will help you get things complete reality.
-            </p>
+            </p> */}
 
-            <Button
+            {/* <Button
               variant="contained"
               className="!bg-[#ffda31] uppercase !text-[#010d14]  !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px] !shadow-none hover:!bg-[#fff] !rounded-none"
             >
               Contact Now
-            </Button>
+            </Button> */}
           </div>
 
           {/* Right Section */}
