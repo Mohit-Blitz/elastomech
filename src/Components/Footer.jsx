@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex flex-col mb-8 md:mb-0">
           <div className="font-bold text-lg md:text-xl lg:text-2xl mb-4">Address</div>
           <div className="md:w-72 lg:w-80">
-            <p className="flex items-start text-sm md:text-base lg:text-lg">
+            <p className="flex items-start">
               <LocationOnOutlinedIcon
                 sx={{ color: "#ffd930", marginRight: "8px" }}
               />
