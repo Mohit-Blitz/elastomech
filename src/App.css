@@ -118,7 +118,118 @@
   visibility: hidden; /* Makes it inaccessible */
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.rs-breadcrumbs.img1 {
+  background: url(https://konstruk.rstheme.com/assets/inr-1-DwcAxtYG.jpg);
+}
+
+.rs-breadcrumbs {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top left !important;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner {
+  padding: 140px 10px;
+  text-align: center;
+}
 .services-item:hover .service-description {
   opacity: 1; /* Fully visible */
   visibility: visible; /* Makes it accessible */
 }
+
+.breadcrumbs-inner .page-title {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 20px;
+  margin-bottom: 18px;
+}
+.breadcrumbs-inner .page-title:after {
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: -5px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transition: all .3s ease;
+  z-index: -1;
+  background: #ffda31;
+  width: 65px;
+}
+
+.breadcrumbs-inner .sub-text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+  display: inline-block;
+}
+
+.rs-breadcrumbs.img1 {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top left !important;
+}
+.breadcrumbs-inner .breadcrumbs-area {
+  background: #ffffff1a;
+  padding: 13px 30px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.breadcrumbs-inner .breadcrumbs-area li {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.breadcrumbs-inner .breadcrumbs-area li a:before {
+  content: "";
+  position: absolute;
+  background: #ffda31;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  right: 10px;
+  top: 7px;
+}
+
+.breadcrumbs-inner .breadcrumbs-area li a {
+  position: relative;
+  padding-right: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.breadcrumbs-inner .breadcrumbs-area li a:hover {
+  color: #ffda31;
+}
+
+
+.sec-title .title.title7 {
+  font-size: 50px;
+  line-height: 70px;
+  color: #421;
+  font-family: Playfair Display;
+}
+.background_color_image {
+  width: 50%;
+  height: 50%;
+  background: #ffda31;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: 0;
+  border-radius: 0px 0px 22px 0px /* Correct syntax for border-radius */
+}
+.image-about{
+  z-index: 9 ;
+}
+

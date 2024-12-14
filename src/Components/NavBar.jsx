@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center py-6 max-[780px]:px-[20px]">
         {/* Logo Section */}
         <div className="flex items-center">
-          <Link to="/index" className="logo-area">
+          <Link to="/" className="logo-area">
             <img className="normal-logo h-[70px]" src={clientLogo} alt="logo" />
           </Link>
         </div>
@@ -15,7 +15,7 @@ const NavBar = () => {
         {/* Navigation Menu */}
         <nav className="flex-1 hidden md:flex justify-center space-x-6 text-gray-800 font-medium">
           <Link
-            to="/index"
+            to="/"
             className="text-[#ffda31] font-semibold hover:text-yellow-600 text-[19px]"
           >
             Home
