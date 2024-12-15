@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
+import background1 from "../Assets/images/blitz.png";
 
 const Slide1 = ({ isActive }) => (
   <div
@@ -12,7 +13,7 @@ const Slide1 = ({ isActive }) => (
     <div
       className="absolute inset-0 bg-cover bg-center"
       style={{
-        backgroundImage: `url(https://konstruk.rstheme.com/assets/h1-2-Dx1IwfDf.jpg)`,
+        backgroundImage: `url(${background1})`,
       }}
     />
     {/* Content */}
@@ -63,7 +64,7 @@ const Slide2 = ({ isActive }) => (
       <div className="container mx-auto px-4 md:px-6 w-full flex justify-start">
         <div className="max-w-3xl space-y-6">
           <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
-            What We Do
+            What We Bring to the Table
           </h1>
           <div className="flex flex-col gap-2">
             <div>

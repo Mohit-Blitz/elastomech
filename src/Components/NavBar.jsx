@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import clientLogo from "../Assets/images/logo.png";
 const NavBar = () => {
@@ -23,11 +22,11 @@ const NavBar = () => {
           <Link to="/about" className="hover:text-gray-600 text-[19px]">
             About
           </Link>
-          <Link to="/services" className="hover:text-gray-600 text-[19px]">
+          {/* <Link to="/services" className="hover:text-gray-600 text-[19px]">
             Services
-          </Link>
-          <Link to="/project" className="hover:text-gray-600 text-[19px]">
-            Projects{" "}
+          </Link> */}
+          <Link to="/products" className="hover:text-gray-600 text-[19px]">
+            Products{" "}
           </Link>
           <Link to="/contact" className="hover:text-gray-600 text-[19px]">
             Contact
@@ -41,7 +40,7 @@ const NavBar = () => {
             to="/contact"
             className="!bg-[#ffda31]  text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff] max-[780px]:hidden"
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
 
           {/* Hamburger Icon */}

@@ -9,7 +9,7 @@ const CounterSection = () => {
               Number Talks
             </span>
             <h2 className="text-white text-4xl font-bold leading-tight mb-4">
-              Elastomech will help you get <br /> things complete reality.
+              Elastomech will help you get your <br /> ideas complete reality.
             </h2>
             {/* <p className="text-gray-300 text-lg mb-8">
               Konstruk will help you get things complete reality.
