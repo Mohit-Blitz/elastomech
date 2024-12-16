@@ -4,6 +4,8 @@ import Variety from "./Variety";
 import Technical from "./Technical";
 import Description from "./Description";
 import Application from "./Application";
+import NavBar from "../NavBar";
+import InfoTopBar from "../InfoTopBar";
 
 const Product = () => {
   const [product, setProduct] = useState(1);
@@ -15,15 +17,20 @@ const Product = () => {
 
   return (
     <>
-      <div className="flex gap-2 h-full w-full">
-        <SideBar handleProductChange={handleProductChange} />
-        <div className="w-full h-full">
-          <Description product={product} />
-          <div className="flex gap-3">
-            <Application product={product} />
-            <Technical product={product} />
+      <div className="flex flex-col min-h-screen">
+        <InfoTopBar />
+        <NavBar />
+        <div className="flex gap-2 h-full w-full">
+
+          <SideBar handleProductChange={handleProductChange} />
+          <div className="w-full h-full">
+            <Description product={product} />
+            <div className="flex gap-3">
+              <Application product={product} />
+              <Technical product={product} />
+            </div>
+            <Variety product={product} />
           </div>
-          <Variety product={product} />
         </div>
       </div>
     </>
