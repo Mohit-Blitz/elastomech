@@ -4,6 +4,8 @@ import NavBar from "../Components/NavBar";
 import InfoTopBar from "../Components/InfoTopBar";
 import Footer from "../Components/Footer";
 import Breadcrumbs from "../Components/Breadcrumbs";
+import FeaturedServices from '../Components/FeaturedServices';
+import EngagementProcess from '../Components/EngagementSteps';
 
 const About = () => {
     const [showButton, setShowButton] = useState(false);
@@ -36,7 +38,7 @@ const About = () => {
                 <NavBar />
                 <div>
                     <Breadcrumbs page_header_details={page_header_details} />
-                    <div className="flex flex-col md:flex-row items-center justify-center bg-white  pt-[120px] pb-[120px] px-[120px]">
+                    <div className="flex flex-col md:flex-row items-center justify-center bg-white  pt-[120px] pb-[120px] px-[120px]  max-[800px]:px-[10px] max-[800px]:py-[10px]">
                         {/* Image Section */}
                         <div className="flex-1 relative">
                             <div className="relative rounded-lg overflow-hidden image-about">
@@ -63,6 +65,8 @@ const About = () => {
                             </p>
                         </div>
                     </div>
+                    <FeaturedServices />
+                    <EngagementProcess />
 
                 </div>
                 <Footer />

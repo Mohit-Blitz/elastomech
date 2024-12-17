@@ -8,9 +8,9 @@ const Breadcrumbs = ({ page_header_details }) => {
             <div className="">
                 <div className="breadcrumbs-inner">
                     <h1 className="page-title">{page_header_details.header_name}</h1>
-                    <span className="sub-text break-words">
+                    {/* <span className="sub-text break-words">
                         {page_header_details.header_dec}
-                    </span>
+                    </span> */}
                     <ul
                         className="breadcrumbs-area"
                     >

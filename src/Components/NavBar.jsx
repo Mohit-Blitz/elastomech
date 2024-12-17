@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import clientLogo from "../Assets/images/logo.png";
+
 const NavBar = () => {
+  const location = useLocation();
+
+  // Function to determine if a link is active
+  const isActive = (path) => location.pathname === path;
+
   return (
     <header className="menu-area sticky top-[-1px] bg-white shadow z-[999]">
       <div className="container mx-auto flex justify-between items-center py-6 max-[780px]:px-[20px]">
@@ -15,20 +21,30 @@ const NavBar = () => {
         <nav className="flex-1 hidden md:flex justify-center space-x-6 text-gray-800 font-medium">
           <Link
             to="/"
-            className="text-[#ffda31] font-semibold hover:text-yellow-600 text-[19px]"
+            className={`text-[19px] ${isActive("/") ? "text-[#ffda31]" : "hover:text-gray-600"
+              }`}
           >
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-600 text-[19px]">
+          <Link
+            to="/about"
+            className={`text-[19px] ${isActive("/about") ? "text-[#ffda31]" : "hover:text-gray-600"
+              }`}
+          >
             About
           </Link>
-          {/* <Link to="/services" className="hover:text-gray-600 text-[19px]">
-            Services
-          </Link> */}
-          <Link to="/products" className="hover:text-gray-600 text-[19px]">
-            Products{" "}
+          <Link
+            to="/products"
+            className={`text-[19px] ${isActive("/products") ? "text-[#ffda31]" : "hover:text-gray-600"
+              }`}
+          >
+            Products
           </Link>
-          <Link to="/contact" className="hover:text-gray-600 text-[19px]">
+          <Link
+            to="/contact"
+            className={`text-[19px] ${isActive("/contact") ? "text-[#ffda31]" : "hover:text-gray-600"
+              }`}
+          >
             Contact
           </Link>
         </nav>
@@ -38,7 +54,7 @@ const NavBar = () => {
           {/* Button */}
           <Link
             to="/contact"
-            className="!bg-[#ffda31]  text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff] max-[780px]:hidden"
+            className="!bg-[#ffda31] text-[#010d14] !font-[600] !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black !rounded-none hover:text-[#fff] max-[780px]:hidden"
           >
             Let&apos;s Talk
           </Link>
