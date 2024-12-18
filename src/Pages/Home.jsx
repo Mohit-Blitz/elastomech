@@ -7,7 +7,7 @@ import AboutSection from "../Components/AboutSection";
 import FullPageSlider from "../Components/FullPageSlider";
 import CounterSection from "../Components/CounterSection";
 import ContactForm from "../Components/ContactForm";
-import PeojectPage from "../Components/PeojectPage";
+import ProductShowcase from "../Components/ProductShowcase";
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
@@ -37,7 +37,7 @@ const Home = () => {
         <div>
           <FullPageSlider />
           <AboutSection />
-          <PeojectPage />
+          <ProductShowcase />
           <CounterSection />
           <Clients />
           <ContactForm />

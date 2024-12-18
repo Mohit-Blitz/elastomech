@@ -1,4 +1,3 @@
-import React from "react";
 import { Products } from "../../Data/Products";
 
 const Description = ({ product }) => {

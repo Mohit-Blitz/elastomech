@@ -13,7 +13,7 @@ import {
   Architecture,
 } from "@mui/icons-material";
 
-const PeojectPage = () => {
+const ProductShowcase = () => {
   const services = [
     {
       title: "Dock Fenders",
@@ -117,4 +117,4 @@ const PeojectPage = () => {
   );
 };
 
-export default PeojectPage;
+export default ProductShowcase;

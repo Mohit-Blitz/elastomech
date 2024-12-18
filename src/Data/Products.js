@@ -24,6 +24,14 @@ export const Products = [
       "8 MPa",
       "5 - 35 Tonnes",
     ],
+    variety: [
+      { name: "DF 3x3 Inch D", image: [D_fender_2x2] },
+      { name: "DF 4x4 Inch D", image: [D_fender_2x2] },
+      { name: "DF 6x6 Inch D", image: [D_fender_2x2] },
+      { name: "DF 8x8 Inch D", image: [D_fender_2x2] },
+      { name: "DF 10x10 Inch D", image: [D_fender_2x2] },
+      { name: "DF 12x12 Inch D", image: [D_fender_2x2] },
+    ],
   },
   {
     id: 2,
@@ -43,6 +51,11 @@ export const Products = [
       "8 MPa",
       "6 - 12 Tonnes",
     ],
+    variety: [
+      { name: "DB 13x10x4 Inch", image: [dock_bumper_13x10x4] },
+      { name: "DB 18x10x4 Inch.", image: [dock_bumper_13x10x4] },
+      { name: "DB 30x10x4 Inch.", image: [dock_bumper_13x10x4] },
+    ],
   },
   {
     id: 3,
@@ -50,13 +63,26 @@ export const Products = [
     description:
       "Wheel chokers are practical devices designed to secure wheels, preventing unintended movement of vehicles or machinery.Crafted from durable materials",
     image: wheel_choker_8,
-    application: [],
+    application: [
+      "Wheel chokers are indispensable for ensuring safety during loading, unloading, or maintenance tasks, where securing stationary positioning of vehicles or machinery is crucial.",
+      "Their straightforward design allows for easy installation and removal, making them ideal for use in warehouses, construction sites, and other industrial environments.",
+      "Available in different sizes and configurations to accommodate various wheel diameters and types, wheel chokers provide a versatile solution for securing equipment and preventing accidents caused by rolling or shifting.",
+    ],
+
     technicals: [
       "NR / SBR Blend",
       "Black",
       "73 + _3 Shore A",
       "8 MPa",
       "2 - 40 Tonnes",
+    ],
+    variety: [
+      { name: "Stopper Kerb 1 mtr", image: [D_fender_2x2] },
+      { name: "Arcraft WC", image: [D_fender_2x2, D_fender_2x2] },
+      { name: "Black Car Stopper", image: [D_fender_2x2] },
+      { name: "WC with Handle", image: [D_fender_2x2] },
+      { name: "8 WC", image: [D_fender_2x2] },
+      { name: "9  WC", image: [D_fender_2x2] },
     ],
   },
   {
