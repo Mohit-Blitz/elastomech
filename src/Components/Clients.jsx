@@ -7,7 +7,7 @@ const Clients = () => {
 
         <div className="text-center mb-12">
 
-          <h2 className="text-[42px] font-bold leading-[53px] text-[#010d14] mt-0">Our Notable Clients
+          <h2 className="text-[42px] font-bold leading-[53px] text-[#010d14] mt-0 font-playfair">Our Notable Clients
           </h2>
         </div>
         <div className="flex flex-wrap items-center justify-center bg-white w-full max-w-[1300px] mx-auto p-5 rounded-sm gap-5">

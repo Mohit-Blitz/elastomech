@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 const CounterSection = () => {
   return (
     <div className="bg-cover bg-center py-10 px-4 md:py-20 md:px-12 lg:py-[120px] lg:px-[10em] bg2">
@@ -35,7 +36,8 @@ const CounterSection = () => {
             >
               {" "}
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                134<span className="prefix">+</span>
+                <CountUp start={0} end={134} duration={2.5} prefix="" />
+                <span className="prefix">+</span>
               </div>
               <span className="title">Completed Projects</span>
             </div>
@@ -48,7 +50,8 @@ const CounterSection = () => {
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                98<span className="prefix">+</span>
+                <CountUp start={0} end={98} duration={2.5} prefix="" />
+                <span className="prefix">+</span>
               </div>
               <span className="title">Happy Clients</span>
             </div>
@@ -61,7 +64,8 @@ const CounterSection = () => {
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                800<span className="prefix">+</span>
+                <CountUp start={0} end={800} duration={2.5} prefix="" />
+                <span className="prefix">+</span>
               </div>
               <span className="title">Parts Developed</span>
             </div>
@@ -74,7 +78,8 @@ const CounterSection = () => {
               }}
             >
               <div className="text-4xl font-bold mb-2 text-[#ffda31]">
-                39<span className="prefix">+</span>
+                <CountUp start={0} end={39} duration={2.5} prefix="" />
+                <span className="prefix">+</span>
               </div>
               <span className="title">Years Experience</span>
             </div>
