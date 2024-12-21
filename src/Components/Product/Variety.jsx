@@ -22,7 +22,7 @@ const Variety = ({ product }) => {
               <h4 className="text-lg font-semibold text-gray-800 mb-2">
                 {variety.name}
               </h4>
-              <button className="absolute bottom-4 right-4 text-sm px-4 py-2 bg-yellow-400 text-white rounded-full shadow-md hover:bg-yellow-500 transition-colors duration-300">
+              <button className="absolute bottom-4 right-4 text-sm px-3 py-1 bg-[#ffda31] text-white rounded-full shadow-md  transition-colors duration-300 cursor-default">
 
               </button>
             </div>

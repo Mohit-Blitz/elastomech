@@ -14,7 +14,7 @@ const SideBar = (props) => {
             key={product.id}
             className={`flex justify-between items-center py-3 px-5 rounded-sm cursor-pointer transition-all duration-200 font-medium shadow-sm
             ${props.selectedProductId === product.id
-                ? "bg-yellow-400 text-black shadow-lg"
+                ? "bg-[#ffda31] text-black shadow-lg"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             onClick={() => props.handleProductChange(product.id)}
