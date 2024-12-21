@@ -15,7 +15,7 @@
   background-size: cover;
 }
 .bg3 {
-  background: url('https://konstruk.rstheme.com/assets/contact-bg-D6w_m3TR.jpg');
+  background: url("https://konstruk.rstheme.com/assets/contact-bg-D6w_m3TR.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@
   color: #fff;
 }
 .contact-right-img {
-  background-image: url('https://konstruk.rstheme.com/assets/con-right-Bu3ROEF_.png');
+  background-image: url("https://konstruk.rstheme.com/assets/con-right-Bu3ROEF_.png");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,15 +82,15 @@
 .services-item:hover .services-content {
   transform: translateX(100%); /* Slide to the right on hover */
 }
-.services-titles{
+.services-titles {
   padding-left: 20px;
   padding-top: 8px;
 }
 
- .services-image img {
-    width: 100%;
-    height: auto;
-    max-width: unset;
+.services-image img {
+  width: 100%;
+  height: auto;
+  max-width: unset;
 }
 .icon-top {
   background: #ffda31;
@@ -100,18 +100,17 @@
   border-radius: 50%;
 }
 
-
-.services-item .service-description{
+.services-item .service-description {
   align-items: center;
   flex-direction: column;
-  display :flex;
+  display: flex;
   justify-content: center;
   text-align: center;
-  position: absolute; 
+  position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
-  top:0;
+  top: 0;
   padding: 20px;
   background-color: #0000009c;
   opacity: 0; /* Fully transparent */
@@ -130,7 +129,7 @@
 }
 
 .rs-breadcrumbs .breadcrumbs-inner {
-  padding: 65px 10px;
+  padding: 30px 10px;
   text-align: center;
 }
 .services-item:hover .service-description {
@@ -156,7 +155,7 @@
   margin: 0 auto;
   left: 0;
   right: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   z-index: -1;
   background: #ffda31;
   width: 65px;
@@ -212,7 +211,6 @@
   color: #ffda31;
 }
 
-
 .sec-title .title.title7 {
   font-size: 50px;
   line-height: 70px;
@@ -227,9 +225,8 @@
   bottom: -20px;
   right: -20px;
   z-index: 0;
-  border-radius: 0px 0px 22px 0px /* Correct syntax for border-radius */
+  border-radius: 0px 0px 22px 0px; /* Correct syntax for border-radius */
 }
-.image-about{
-  z-index: 9 ;
+.image-about {
+  z-index: 9;
 }
-
