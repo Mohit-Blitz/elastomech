@@ -55,11 +55,14 @@ const Product = () => {
           <SideBar selectedProductId={selectedProductId} handleProductChange={handleProductChange} />
           <div className="w-full h-full p-6">
             <Description product={product} />
-            <div className="flex w-full gap-4">
-              <Application product={product} />
-              <Technical product={product} />
+            <div className="flex flex-col w-full gap-4">
+              <div className="flex w-full gap-4">
+                <Application product={product} />
+                <Technical product={product} />
+              </div>
+              <Variety product={product} />
             </div>
-            <Variety product={product} />
+
           </div>
         </div>
         <a href="https://api.whatsapp.com/send?phone=9075358795&text=Hello" className=" fixed bottom-4 right-3 cursor-pointer">

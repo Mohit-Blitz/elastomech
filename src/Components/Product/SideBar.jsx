@@ -6,7 +6,7 @@ const SideBar = (props) => {
 
 
   return (
-    <div className="w-[20%] h-full border-r bg-white shadow-md p-6">
+    <div className="w-[20%] h-auto border-r bg-white shadow-sm p-6">
       <h2 className="text-xl font-semibold mb-6 text-gray-700">Type of Products</h2>
       <div className="space-y-4">
         {Products.map((product) => (
