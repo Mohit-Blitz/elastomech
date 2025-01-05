@@ -12,6 +12,7 @@ const Description = ({ product }) => {
       <p className="text-gray-700 text-md font-medium">
         {selectedProduct.description}
       </p>
+      <img src={Products.image} alt="" srcset="" />
     </div>
   );
 };
