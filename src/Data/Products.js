@@ -1,9 +1,30 @@
 import Hcr_4 from "../Assets/images/Products/HCR_4.jpg";
-import D_fender_2x2 from "../Assets/images/Products/D_fender_2x2.jpg";
-import wheel_choker_8 from "../Assets/images/Products/wheel_choker_8.jpg";
 import black_speed_breaker from "../Assets/images/Products/black_speed_breaker.jpg";
-import dock_bumper_13x10x4 from "../Assets/images/Products/dock_bumper_13x10x4.jpg";
 import core_cable_protector from "../Assets/images/Products/2_core_cable_protector.jpg";
+
+import df_2 from "../Assets/images/Products/DFender/2by2.jpg";
+import df_3 from "../Assets/images/Products/DFender/3by3.jpg";
+import df_4 from "../Assets/images/Products/DFender/4by4.jpg";
+
+import d_b_13x10x4 from "../Assets/images/Products/Bumpers/13x10x4.jpg";
+import d_b_18x10x4 from "../Assets/images/Products/Bumpers/18x10x4.jpg";
+import d_b_18x10x4_2 from "../Assets/images/Products/Bumpers/18x10x4_2.jpg";
+import d_b_30x10x4 from "../Assets/images/Products/Bumpers/30x10x4.jpg";
+import d_b_30x10x4_2 from "../Assets/images/Products/Bumpers/30x10x4_2.jpg";
+
+import wc_8 from "../Assets/images/Products/WChockers/wheel_choker_8.jpg";
+import ac_yellow from "../Assets/images/Products/WChockers/aircraft_yellow.jpg";
+import ac_black from "../Assets/images/Products/WChockers/aircraft_black.jpg";
+import handle_wc from "../Assets/images/Products/WChockers/handlewc.jpg";
+import handle_wc2 from "../Assets/images/Products/WChockers/handlewc2.jpg";
+import kirb from "../Assets/images/Products/WChockers/kirb.jpg";
+import kirb2 from "../Assets/images/Products/WChockers/kirb_2.jpg";
+import car from "../Assets/images/Products/WChockers/car.jpg";
+import car2 from "../Assets/images/Products/WChockers/car2.jpg";
+import car_yellow from "../Assets/images/Products/WChockers/car_yellow.jpg";
+import car_yellow2 from "../Assets/images/Products/WChockers/car_yellow2.jpg";
+import lorry from "../Assets/images/Products/WChockers/lorry.jpg";
+import lorry2 from "../Assets/images/Products/WChockers/lorry2.jpg";
 
 export const Products = [
   {
@@ -11,7 +32,7 @@ export const Products = [
     title: "Dock Fenders",
     description:
       "Innovating Dock Fenders and a comprehensive line of Rubber Products, ensuring superior protection for marine infrastructure worldwide.",
-    image: D_fender_2x2,
+    image: df_2,
     application: [
       "Our fenders serve as a dependable buffer, absorbing impact and minimizing damage during berthing and mooring operations.",
       "With their adaptable design, they cater to a variety of vessel types and docking configurations, ensuring versatile and effective use.",
@@ -25,12 +46,12 @@ export const Products = [
       "5 - 35 Tonnes",
     ],
     variety: [
-      { name: "DF 3x3 Inch D", image: D_fender_2x2 },
-      { name: "DF 4x4 Inch D", image: D_fender_2x2 },
-      { name: "DF 6x6 Inch D", image: D_fender_2x2 },
-      { name: "DF 8x8 Inch D", image: D_fender_2x2 },
-      { name: "DF 10x10 Inch D", image: D_fender_2x2 },
-      { name: "DF 12x12 Inch D", image: D_fender_2x2 },
+      { name: "DF 2x2 Inch D", image: [df_2] },
+      { name: "DF 3x3 Inch D", image: [df_3] },
+      { name: "DF 4x4 Inch D", image: [df_4] },
+      { name: "DF 6x6 Inch D", image: [df_2] },
+      { name: "DF 8x8 Inch D", image: [df_2] },
+      { name: "DF 10x10 Inch D", image: [df_2] },
     ],
   },
   {
@@ -38,7 +59,7 @@ export const Products = [
     title: "Dock Bumpers",
     description:
       "At Elastomech, we proudly offer a comprehensive range of high-performance Dock Bumpers, designed to safeguard your docks and vessels with unmatched durability",
-    image: dock_bumper_13x10x4,
+    image: d_b_13x10x4,
     application: [
       "These bumpers provide essential protection, absorbing impact to prevent damage to both loading docks and vehicles during loading and unloading operations.",
       "With their versatility in size and configuration, they seamlessly adapt to different loading scenarios, ensuring effective and comprehensive coverage.",
@@ -52,9 +73,9 @@ export const Products = [
       "6 - 12 Tonnes",
     ],
     variety: [
-      { name: "DB 13x10x4 Inch", image: [dock_bumper_13x10x4] },
-      { name: "DB 18x10x4 Inch.", image: [dock_bumper_13x10x4] },
-      { name: "DB 30x10x4 Inch.", image: [dock_bumper_13x10x4] },
+      { name: "DB 13x10x4 Inch", image: [d_b_13x10x4] },
+      { name: "DB 18x10x4 Inch.", image: [d_b_18x10x4, d_b_18x10x4_2] },
+      { name: "DB 30x10x4 Inch.", image: [d_b_30x10x4, d_b_30x10x4_2] },
     ],
   },
   {
@@ -62,7 +83,7 @@ export const Products = [
     title: "Wheel Chokers",
     description:
       "Wheel chokers are practical devices designed to secure wheels, preventing unintended movement of vehicles or machinery.Crafted from durable materials",
-    image: wheel_choker_8,
+    image: wc_8,
     application: [
       "Wheel chokers are indispensable for ensuring safety during loading, unloading, or maintenance tasks, where securing stationary positioning of vehicles or machinery is crucial.",
       "Their straightforward design allows for easy installation and removal, making them ideal for use in warehouses, construction sites, and other industrial environments.",
@@ -77,12 +98,13 @@ export const Products = [
       "2 - 40 Tonnes",
     ],
     variety: [
-      { name: "Stopper Kerb 1 mtr", image: D_fender_2x2 },
-      { name: "Arcraft WC", image: [D_fender_2x2, D_fender_2x2] },
-      { name: "Black Car Stopper", image: D_fender_2x2 },
-      { name: "WC with Handle", image: D_fender_2x2 },
-      { name: "8 WC", image: D_fender_2x2 },
-      { name: "9  WC", image: D_fender_2x2 },
+      { name: "Stopper Kerb 1 mtr", image: [kirb, kirb2] },
+      { name: "Yellow Arcraft WC", image: [ac_yellow] },
+      { name: "Black Arcraft WC", image: [ac_black] },
+      { name: "Black Car Stopper", image: [car, car2] },
+      { name: "Yellow Car Stopper", image: [car_yellow, car_yellow2] },
+      { name: "Lorry Stopper", image: [lorry, lorry2] },
+      { name: "WC with Handle", image: [handle_wc, handle_wc2] },
     ],
   },
   {
@@ -91,8 +113,14 @@ export const Products = [
     description:
       "High-quality, durable speed breakers designed to enhance road safety and manage traffic effectively. Built with robust materials, our speed breakers are engineered",
     image: black_speed_breaker,
-    application: [],
+    application: [
+      "Schools and Hospitals: Installed near schools, hospitals, and other sensitive areas to slow  down traffic and protect vulnerable individuals.",
+      "Parking Lots: Placed in parking lots to manage the speed of vehicles and prevent  accidents.",
+      "Industrial Areas: Used in factories, warehouses, and industrial zones to reduce speed and  ensure safety of workers and equipment.",
+      "Pedestrian Crossings: Positioned at pedestrian crossing points to slow down vehicles,  enhancing pedestrian safety.",
+    ],
     technicals: [],
+    variety: [],
   },
   {
     id: 5,
@@ -112,6 +140,7 @@ export const Products = [
       "8 MPa",
       "6 - 15 Tonnes",
     ],
+    variety: [],
   },
   {
     id: 6,
@@ -131,6 +160,7 @@ export const Products = [
       "8 MPa",
       "1.5 Tonnes each tyre",
     ],
+    variety: [],
   },
   {
     id: 7,
@@ -150,6 +180,7 @@ export const Products = [
       "6 to 8 MPa",
       "2 - 40 Tonnes",
     ],
+    variety: [],
   },
   {
     id: 8,
@@ -158,11 +189,12 @@ export const Products = [
       "Our rubber to metal bonded parts are meticulously designed and manufactured to provide superior performance and longevity in the most demanding industrial environments. Combining the flexibility and resilience of rubber with the strength and durability of metal, these components are essential for reducing vibration, absorbing shock, and ensuring smooth operation in various machinery and equipment. Our product range includes high-quality tipper pads, extrusion pads, and other custom rubber to metal bonded solutions tailored to meet your specific needs.",
     image: core_cable_protector,
     application: [
-      "Used in various industrial applications to securely mount equipment.",
-      "Isolates machinery from vibrations and shocks.",
-      "Ensures stable and reliable operation of mounted equipment.",
+      "Construction Vehicles: Primarily used in tipper trucks or dump trucks in construction,  where the truck body frequently tilts to unload materials.",
+      "Mining Trucks: Used in large mining trucks to protect the truck’s frame during heavy  load dumping operations.",
+      "Agricultural Vehicles: Installed in agricultural trucks to absorb shocks and protect the  chassis during tipping of harvested materials.",
     ],
-    technicals: [],
+    technicals: ["Natural or Synthetic Rubber", "Black", "", "", ""],
+    variety: [],
   },
   {
     id: 9,
@@ -175,6 +207,7 @@ export const Products = [
       "With their flexible and impact-absorbing properties, they effectively minimize damage from collisions with carts, vehicles, and other objects.",
       "Available in a range of sizes, colors, and profiles to suit different wall types and aesthetic preferences, rubber wall and corner guards provide versatile and discreet protection while maintaining the appearance of the space.",
     ],
-    technicals: ["NR / SBR Blend", "Black", "73 +_ 3 Shore A", "8 MPa", ""],
+    technicals: ["NR / SBR Blend", "Black", "73 +_ 3 Shore A", "8 MPa", " "],
+    variety: [],
   },
 ];
