@@ -2,49 +2,54 @@ import { useState, useEffect } from "react";
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 import background1 from "../Assets/images/blitz.png";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
-const Slide1 = ({ isActive }) => (
-  <div
-    className={`absolute inset-0 transition-opacity duration-1000 ${
-      isActive ? "opacity-100" : "opacity-0"
-    }`}
-  >
-    {/* Background Image */}
+const Slide1 = ({ isActive }) => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleNavigation = () => {
+    navigate("/about"); // Navigate to the /about page
+  };
+
+  return (
     <div
-      className="absolute inset-0 bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${background1})`,
-      }}
-    />
-    {/* Content */}
-    <div className="relative h-full flex items-center justify-end">
-      <div className="container mx-auto px-4 md:px-6 w-full flex justify-end">
-        <div className="max-w-3xl space-y-6 text-left">
-          <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
-            About Us
-          </h1>
-          <p className="md:text-xl text-[#333] max-w-2xl leading-[28px] text-2xl font-semibold">
-            Elastomech, a pioneer in the manufacturing of customized industrial
-            rubber and metal safety components, dedicated to crafting solutions
-            that enhance safety, prevent injuries, and minimize operational
-            downtime. With nearly four decades of expertise, we specialize in
-            creating a diverse range of products, including Dock Bumpers, Dock
-            Fenders, Cable Protectors, Wheel Chocks, Metal Wheel Guides, Wall
-            Guards, Tipper Pads, Bushes, Mud Flaps and more, building a
-            portfolio of over 500 parts for both export and domestic markets. As
-            an ISO 9001:2015 certified organization, we take pride in upholding
-            world-class manufacturing, testing, and administrative standards,
-            ensuring excellence at every stage. By combining advanced technology
-            with a client-focused approach, we strive to exceed expectations and
-            foster long-term partnerships with customers worldwide. At
-            Elastomech, our vision is to provide high-quality, reliable, and
-            life-saving solutions to industries across the globe.
-          </p>
+      className={`absolute inset-0 transition-opacity duration-1000 ${
+        isActive ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${background1})`,
+        }}
+      />
+      {/* Content */}
+      <div className="relative h-full flex items-center justify-end">
+        <div className="container mx-auto px-4 md:px-6 w-full flex justify-end">
+          <div className="max-w-3xl space-y-6 text-left">
+            <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
+              Industrial Safety Meets Proven Expertise.
+            </h1>
+            <p className="md:text-xl text-[#333] max-w-2xl leading-[28px] text-2xl font-semibold font-robot">
+              Custom industrial safety solutions with four decades of expertise,
+              ensuring reliability, reducing downtime, and protecting operations
+              worldwide.
+            </p>
+            <Button
+              variant="contained"
+              className="!bg-[#ffb703] hover:bg-[#010d14] !text-[#010d14] hover:text-white !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px] cursor-pointer z-[9999]"
+              onClick={handleNavigation}
+            >
+              LEARN MORE
+            </Button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Slide2 = ({ isActive }) => (
   <div
@@ -66,35 +71,31 @@ const Slide2 = ({ isActive }) => (
           <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
             What We Bring to the Table
           </h1>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 font-robot">
             <div>
-              <h2 className="text-2xl font-bold">• Part Development</h2>
-              <p className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px ml-3">
-                We specialize in developing high-performance parts using
-                cutting-edge elastomeric materials, delivering innovative
-                solutions for industries seeking reliability and durability.
-              </p>
+              <span className="text-xl font-bold">Part Development {""}</span>
+              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+                integrates advanced elastomeric materials to create
+                high-performance, reliable, and durable components for
+                industrial applications.
+              </span>
             </div>
             <div>
-              <h2 className="text-2xl font-bold">
-                • Part Development Consultancy
-              </h2>
-              <p className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px] ml-3">
-                At Elastomech, we provide expert Part Development Consultancy,
-                leveraging advanced elastomer and mechanical engineering to
-                create tailored solutions that drive innovation and performance.
-              </p>
+              <span className="text-xl font-bold">
+                Part Development Consultancy {""}
+              </span>
+              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+                offers tailored elastomer and mechanical engineering expertise
+                to drive innovation and optimize product performance.
+              </span>
             </div>
             <div>
-              <h2 className="text-2xl font-bold leading-[28px]">
-                • Part Manufacturing
-              </h2>
-              <p className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px] ml-3">
-                Elastomech excels in precision part manufacturing, using
-                state-of-the-art facilities and the highest quality elastomeric
-                materials to ensure products that meet the toughest industry
-                standards.
-              </p>
+              <span className="text-xl font-bold">Part Manufacturing {""}</span>
+              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+                ensures precision-built parts using state-of-the-art facilities
+                and premium elastomeric materials for maximum durability and
+                quality.
+              </span>
             </div>
           </div>
         </div>

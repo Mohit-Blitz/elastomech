@@ -1,4 +1,3 @@
-import Button from "@mui/material/Button";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const AboutSection = () => {
