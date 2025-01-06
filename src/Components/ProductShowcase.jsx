@@ -1,5 +1,5 @@
 import Hcr_4 from "../Assets/images/Products/HCR_4.jpg";
-import D_fender_2x2 from "../Assets/images/Products/D_fender_2x2.jpg";
+import df_2 from "../Assets/images/Products/DFender/2by2.jpg";
 import wheel_choker_8 from "../Assets/images/Products/wheel_choker_8.jpg";
 import black_speed_breaker from "../Assets/images/Products/black_speed_breaker.jpg";
 import dock_bumper_13x10x4 from "../Assets/images/Products/dock_bumper_13x10x4.jpg";
@@ -19,7 +19,7 @@ const ProductShowcase = () => {
       title: "Dock Fenders",
       description:
         "Innovating Dock Fenders and a comprehensive line of Rubber Products, ensuring superior protection for marine infrastructure worldwide.",
-      image: D_fender_2x2,
+      image: df_2,
       icon: <Construction className="text-4xl text-black-500" />,
     },
     {
