@@ -14,7 +14,7 @@ const Description = ({ product }) => {
         {selectedProduct.description}
       </p>
       {/* <img src={Products.image} alt="" srcset="" /> */}
-      <div onClick={() => setIsModalOpen(true)} className="absolute right-1 top-1 rounded-sm !bg-[#ffda31] text-[#010d14] !font-[600] cursor-pointer !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black  hover:text-[#fff]"><DirectionsRoundedIcon className="mr-2" />Want a custom product?</div>
+      <div onClick={() => setIsModalOpen(true)} className="absolute right-1 top-1 rounded-sm !bg-[#ffda31] text-[#010d14] !font-[600] cursor-pointer !px-[40px] !py-[15px] h-auto !text-[15px] !shadow-none hover:!bg-black  hover:text-[#fff]"><DirectionsRoundedIcon className="mr-2" />Want a custom product ?</div>
 
       {/* Modal */}
       {isModalOpen && (
