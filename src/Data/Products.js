@@ -1,4 +1,3 @@
-import Hcr_4 from "../Assets/images/Products/HCR_4.jpg";
 import black_speed_breaker from "../Assets/images/Products/black_speed_breaker.jpg";
 import core_cable_protector from "../Assets/images/Products/2_core_cable_protector.jpg";
 
@@ -25,6 +24,28 @@ import car_yellow from "../Assets/images/Products/WChockers/car_yellow.jpg";
 import car_yellow2 from "../Assets/images/Products/WChockers/car_yellow2.jpg";
 import lorry from "../Assets/images/Products/WChockers/lorry.jpg";
 import lorry2 from "../Assets/images/Products/WChockers/lorry2.jpg";
+
+import sb_black from "../Assets/images/Products/Sbraker/black.jpg";
+import sb_yellow from "../Assets/images/Products/Sbraker/yellow.jpg";
+import sb_yellow2 from "../Assets/images/Products/Sbraker/yellow_2.jpg";
+
+import Hcr_4 from "../Assets/images/Products/HCR_4.jpg";
+import hc_3 from "../Assets/images/Products/Hose/3.jpg";
+import hc_3_2 from "../Assets/images/Products/Hose/3_2.jpg";
+import hc_4 from "../Assets/images/Products/Hose/4.jpg";
+import hc_4_2 from "../Assets/images/Products/Hose/4_2.jpg";
+import hc_5 from "../Assets/images/Products/Hose/5.jpg";
+import hc_5_2 from "../Assets/images/Products/Hose/5_2.jpg";
+
+import cp_2 from "../Assets/images/Products/CableP/2_core.jpg";
+import cp_1 from "../Assets/images/Products/CableP/single_core.jpg";
+
+import tripper from "../Assets/images/Products/tipper/tipper_pads.jpg";
+
+import Rb_All from "../Assets/images/Products/RB/RB_ALL.jpg";
+import Rb8 from "../Assets/images/Products/RB/Rb8.jpg";
+import door_bush from "../Assets/images/Products/RB/door_bush.jpg";
+import door_bush2 from "../Assets/images/Products/RB/door_bush2.jpg";
 
 export const Products = [
   {
@@ -120,7 +141,10 @@ export const Products = [
       "Pedestrian Crossings: Positioned at pedestrian crossing points to slow down vehicles,  enhancing pedestrian safety.",
     ],
     technicals: [],
-    variety: [],
+    variety: [
+      { name: "Speed Braker Black", image: [sb_black] },
+      { name: "Speed Braker Yellow", image: [sb_yellow, sb_yellow2] },
+    ],
   },
   {
     id: 5,
@@ -140,7 +164,13 @@ export const Products = [
       "8 MPa",
       "6 - 15 Tonnes",
     ],
-    variety: [],
+    variety: [
+      { name: "HR 3 Inch", image: [hc_3, hc_3_2] },
+      { name: "HR 4 Inch", image: [hc_4_2, hc_4] },
+      { name: "HR 5 Inch", image: [hc_5_2, hc_5] },
+      { name: "HCR 4 Inch", image: [Hcr_4] },
+      { name: "HCR 4 Inch [With Metal]", image: [Hcr_4] },
+    ],
   },
   {
     id: 6,
@@ -154,13 +184,16 @@ export const Products = [
       "Available in a range of sizes and configurations to accommodate different cable diameters and quantities, rubber cable protectors offer versatile solutions for ensuring the safety and longevity of electrical and data communication systems.",
     ],
     technicals: [
-      "NR / SBR Blend(Topslit cps), EPDM Rubber(Single and Double Core)",
+      "NR / SBR Blend,EPDM Rubber",
       "Black",
       "68 + _3 Shore A",
       "8 MPa",
-      "1.5 Tonnes each tyre",
+      "1.5 Tonnes",
     ],
-    variety: [],
+    variety: [
+      { name: "Single Core Cp - 1 Inch Cable", image: [cp_1] },
+      { name: "Double Core Cp - 30mm Cable", image: [cp_2] },
+    ],
   },
   {
     id: 7,
@@ -180,7 +213,16 @@ export const Products = [
       "6 to 8 MPa",
       "2 - 40 Tonnes",
     ],
-    variety: [],
+    variety: [
+      { name: "Round RB 3 Inch", image: [door_bush] },
+      { name: "Rectangular RB 5 Inch", image: [Rb_All] },
+      { name: "Rectangular RB 6x2x2 Inch", image: [Rb_All] },
+      { name: "Rectangular RB 8x2x2 Inch", image: [Rb_All] },
+      { name: "Rectangular RB 10x2x2 Inch", image: [Rb_All] },
+      { name: "Rectangular RB 12x2x2 Inch", image: [Rb_All] },
+      { name: "RB 8 Inch D", image: [Rb8] },
+      { name: "Door Bush", image: [door_bush, door_bush2] },
+    ],
   },
   {
     id: 8,
@@ -194,7 +236,7 @@ export const Products = [
       "Agricultural Vehicles: Installed in agricultural trucks to absorb shocks and protect the  chassis during tipping of harvested materials.",
     ],
     technicals: ["Natural or Synthetic Rubber", "Black", "", "", ""],
-    variety: [],
+    variety: [{ name: "Tipper Pads", image: [tripper] }],
   },
   {
     id: 9,
