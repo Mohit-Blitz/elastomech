@@ -14,9 +14,8 @@ const Slide1 = ({ isActive }) => {
 
   return (
     <div
-      className={`absolute inset-0 transition-opacity duration-1000 ${
-        isActive ? "opacity-100" : "opacity-0"
-      }`}
+      className={`absolute inset-0 transition-opacity duration-1000 ${isActive ? "opacity-100" : "opacity-0"
+        }`}
     >
       {/* Background Image */}
       <div
@@ -39,7 +38,7 @@ const Slide1 = ({ isActive }) => {
             </p>
             <Button
               variant="contained"
-              className="!bg-[#ffb703] hover:bg-[#010d14] !text-[#010d14] hover:text-white !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px] cursor-pointer z-[9999]"
+              className="!bg-[#fdd92f] !rounded-none hover:bg-[#010d14] !text-[#010d14] hover:text-white !font-[600] !px-[23px] !py-[17px] h-auto !text-[15px] cursor-pointer z-[99]"
               onClick={handleNavigation}
             >
               LEARN MORE
@@ -53,9 +52,8 @@ const Slide1 = ({ isActive }) => {
 
 const Slide2 = ({ isActive }) => (
   <div
-    className={`absolute inset-0 transition-opacity duration-1000 ${
-      isActive ? "opacity-100" : "opacity-0"
-    }`}
+    className={`absolute inset-0 transition-opacity duration-1000 ${isActive ? "opacity-100" : "opacity-0"
+      }`}
   >
     {/* Background Image */}
     <div
@@ -151,9 +149,8 @@ const FullPageSlider = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              currentSlide === index ? "bg-[#ffda31]" : "bg-white/50"
-            }`}
+            className={`w-2 h-2 rounded-full transition-colors ${currentSlide === index ? "bg-[#ffda31]" : "bg-white/50"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
