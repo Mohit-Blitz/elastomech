@@ -50,13 +50,13 @@ const Product = () => {
         <NavBar />
         <Breadcrumbs page_header_details={page_header_details} />
 
-        <div className="flex gap-2 h-full w-full">
+        <div className="flex gap-2 max-[1146px]:flex-col h-full w-full">
 
           <SideBar selectedProductId={selectedProductId} handleProductChange={handleProductChange} />
-          <div className="w-full h-full p-6">
+          <div className="w-full h-full p-6 ">
             <Description product={product} />
             <div className="flex flex-col w-full gap-4">
-              <div className="flex w-full gap-4">
+              <div className="flex w-full gap-4 max-[1146px]:flex-col">
                 <Application product={product} />
                 <Technical product={product} />
               </div>

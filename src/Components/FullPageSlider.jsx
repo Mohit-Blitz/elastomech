@@ -17,21 +17,21 @@ const Slide1 = ({ isActive }) => {
       className={`absolute inset-0 transition-opacity duration-1000 ${isActive ? "opacity-100" : "opacity-0"
         }`}
     >
-      {/* Background Image */}
+
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${background1})`,
         }}
       />
-      {/* Content */}
+
       <div className="relative h-full flex items-center justify-end">
         <div className="container mx-auto px-4 md:px-6 w-full flex justify-end">
           <div className="max-w-3xl space-y-6 text-left">
-            <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
+            <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] max-[600px]:leading-[40px] leading-[75px] max-[600px]:text-[30px] font-playfair">
               Industrial Safety Meets Proven Expertise.
             </h1>
-            <p className="md:text-xl text-[#333] max-w-2xl leading-[28px] text-2xl font-semibold font-robot">
+            <p className="md:text-xl text-[#333] max-[600px]:text-[19px] max-w-2xl leading-[28px] text-2xl font-semibold font-robot">
               Custom industrial safety solutions with four decades of expertise,
               ensuring reliability, reducing downtime, and protecting operations
               worldwide.
@@ -66,30 +66,30 @@ const Slide2 = ({ isActive }) => (
     <div className="relative h-full flex items-center justify-start">
       <div className="container mx-auto px-4 md:px-6 w-full flex justify-start">
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] leading-[75px] font-playfair">
+          <h1 className="text-[70px] md:text-6xl font-[800] text-[#010d14] max-[600px]:leading-[40px] leading-[75px]  max-[600px]:text-[30px] font-playfair">
             What We Bring to the Table
           </h1>
-          <div className="flex flex-col gap-2 font-robot">
+          <div className="flex flex-col gap-2 max-[600px]:!text-[19px] font-robot">
             <div>
-              <span className="text-xl font-bold">Part Development {""}</span>
-              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+              <span className="text-xl max-[600px]:!text-[20px] font-bold">Part Development {""}</span>
+              <span className="md:text-xl text-[#333] max-[600px]:!text-[19px] font-[500] max-w-2xl leading-[28px]">
                 integrates advanced elastomeric materials to create
                 high-performance, reliable, and durable components for
                 industrial applications.
               </span>
             </div>
             <div>
-              <span className="text-xl font-bold">
+              <span className="text-xl font-bold max-[600px]:!text-[20px]">
                 Part Development Consultancy {""}
               </span>
-              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+              <span className="md:text-xl text-[#333] font-[500] max-[600px]:!text-[19px] max-w-2xl leading-[28px]">
                 offers tailored elastomer and mechanical engineering expertise
                 to drive innovation and optimize product performance.
               </span>
             </div>
             <div>
-              <span className="text-xl font-bold">Part Manufacturing {""}</span>
-              <span className="md:text-xl text-[#333] font-[500] max-w-2xl leading-[28px]">
+              <span className="text-xl font-bold max-[600px]:!text-[19px]">Part Manufacturing {""}</span>
+              <span className="md:text-xl text-[#333] font-[500] max-[600px]:!text-[20px] max-w-2xl leading-[28px]">
                 ensures precision-built parts using state-of-the-art facilities
                 and premium elastomeric materials for maximum durability and
                 quality.

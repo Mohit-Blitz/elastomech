@@ -6,9 +6,9 @@ const SideBar = (props) => {
 
 
   return (
-    <div className="w-[20%] h-auto border-r bg-white shadow-sm p-6">
+    <div className="max-[1146px]:w-full w-[20%] h-auto border-r max-[1146px]:border-none bg-white shadow-sm p-6">
       <h2 className="text-xl font-semibold mb-6 text-gray-700">Type of Products</h2>
-      <div className="space-y-4">
+      <div className="flex flex-col gap-4 max-[1146px]:flex-row overflow-y-auto">
         {Products.map((product) => (
           <div
             key={product.id}

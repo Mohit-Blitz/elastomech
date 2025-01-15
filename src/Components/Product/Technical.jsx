@@ -5,7 +5,7 @@ const Technical = ({ product }) => {
   const selectedProduct = Products.find((item) => item.id === product);
 
   return (
-    <div className="border w-[30%] border-gray-200 shadow-md p-6 rounded-sm bg-gradient-to-b hover:from-yellow-100 transform-cpu from-white to-gray-50">
+    <div className="border max-[1146px]:w-full w-[30%] border-gray-200 shadow-md p-6 rounded-sm bg-gradient-to-b hover:from-yellow-100 transform-cpu from-white to-gray-50">
       <h3 className="text-xl font-semibold mb-6 text-gray-700">Technical Details</h3>
       <div className="divide-y divide-gray-300">
         <div className="py-3 flex justify-between items-center">
